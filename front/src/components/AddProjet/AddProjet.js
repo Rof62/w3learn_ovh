@@ -16,7 +16,7 @@ export default function AddProjet({user}) {
   useEffect(() => {
     async function getGenres() {
       try {
-        const response = await fetch("api/profileImage/getGenres");
+        const response = await fetch("https://wlearnjw3learn.mysql.db/api/profileImage/getGenres");
         if (response.ok) {
           const genres = await response.json();
           console.log(genres);

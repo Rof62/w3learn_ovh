@@ -41,7 +41,7 @@ function ForgotPassword() {
       async function submit(values) {
         console.log(values);
         try {
-            await fetch(`api/users/resetPassword/${values.email}`)
+            await fetch(`https://wlearnjw3learn.mysql.db/api/users/resetPassword/${values.email}`)
         } catch (error) {
             console.error(error)
         }
