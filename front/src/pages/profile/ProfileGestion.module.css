@@ -1,0 +1,76 @@
+.cards {
+  background-color: var(--light-grey);
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.gestion {
+  margin-top: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+.gestion p {
+  width: 150px;
+}
+
+.gestion2 {
+  margin-top: 50px;
+}
+
+@media (max-width: 997px) {
+  label {
+    font-size: 14px;
+  }
+  input {
+    width: 80%;
+  }
+  img {
+    width: 50%;
+  }
+}
+@media (max-width: 577px) {
+  h3 {
+    font-size: 12px;
+  }
+  .contributeur {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contributeur h2 {
+    font-size: 12px;
+  }
+  .delete {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .delete h3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  .avatar {
+    display: none;
+  }
+  .container p {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  .column {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .column button {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 997px) {
+  .avatar {
+    display: none;
+  }
+}/*# sourceMappingURL=ProfileGestion.module.css.map */

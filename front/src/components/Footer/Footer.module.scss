@@ -1,0 +1,77 @@
+@use "../../sass/mixin" as mixin;
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 30px 30px 0 0;
+   background: radial-gradient(circle at 100% 100%, #05062D 0, #05062D 25px, transparent 25px) 0% 0%/30px 30px no-repeat,
+      radial-gradient(circle at 0 100%, #05062D 0, #05062D 25px, transparent 25px) 100% 0%/30px 30px no-repeat,
+      radial-gradient(circle at 100% 0, #05062D 0, #05062D 25px, transparent 25px) 0% 100%/30px 30px no-repeat,
+      radial-gradient(circle at 0 0, #05062D 0, #05062D 25px, transparent 25px) 100% 100%/30px 30px no-repeat,
+      linear-gradient(#05062D, #05062D) 50% 50%/calc(100% - 10px) calc(100% - 60px) no-repeat,
+      linear-gradient(#05062D, #05062D) 50% 50%/calc(100% - 60px) calc(100% - 10px) no-repeat,
+      conic-gradient(#AF40FF 0%, #5B42F3 33.33%, #00DDEB 66.67%, #AF40FF 100%);
+   padding: 9px;
+   
+   // box-sizing: border-box;
+}
+
+.reseau{
+   margin-top: 20px;
+   gap: 0.9rem;
+   a{
+      gap: 10px;
+   }
+   img{
+      width: 50px;
+      
+   }
+}
+
+.topFooter {
+   padding: 20px;
+   display: flex;
+   align-items: flex-start;
+   width: 100%;
+   gap: 2rem;
+   justify-content: space-around;
+   flex-wrap: wrap;
+
+   @include mixin.footer {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .logo {
+      width: 75px;
+      height: 50px;
+   }
+}
+
+.ul {
+   width: 300px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.5rem;
+   justify-content: flex-start;
+}
+
+.a {
+   color: white;
+   width: max-content;
+   font-size: 18px;
+   font-weight: 200;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   text-decoration: none;
+   cursor: pointer;
+   transition: 0.2s opacity;
+
+   &:hover {
+      transition: 0.2s opacity;
+      opacity: 0.8;
+      color: var(--gray-2);
+   }
+}

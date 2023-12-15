@@ -1,0 +1,51 @@
+.menuContainer {
+    position: fixed;
+    background: var(--light-grey);
+    z-index: 2;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    
+    i{
+        position: absolute;
+        z-index: 4;
+        top: 3%;
+         right: 5%;
+    }
+    li {
+        text-decoration: none;
+        // color: var(--primary) ;
+        text-align: center;
+        // width: 20%;
+        display: block;
+        padding: 10px 15px;
+        margin: 30px;
+        cursor: pointer;
+        border-radius: 20px;
+        transition: 0.2s opacity;
+        &:hover {
+             
+            background: white;
+        color: var(--primary) ;
+        border: 2px solid var(--primary);
+        
+        }
+        a{
+            text-decoration: none;
+            color: var(--primary) ;
+        }
+    }
+}
+
+.burger{
+    
+    display: none;
+}
+
+.none{
+    text-decoration: none;
+    
+    
+    
+}

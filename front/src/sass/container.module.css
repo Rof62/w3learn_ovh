@@ -1,0 +1,106 @@
+.container {
+  gap: 20%;
+  padding: 2%;
+  background-color: var(--light-grey);
+  animation: galaxyEntry 10s linear infinite;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: 0 0 5px #AF40FF, 0 0 6px #5B42F3, 0 0 7px #00DDEB, 0 0 8px #5B42F3, 0 0 9px #AF40FF;
+  width: 80%;
+  margin: 50px auto;
+}
+.container h2 {
+  display: flex;
+  justify-content: center;
+}
+.container p {
+  font-size: 18px;
+}
+.container span {
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  color: white;
+  font-style: oblique;
+  font-weight: 800;
+}
+.container:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  padding: 5px;
+  background-size: 200% 100%;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: rotateColors 6s linear infinite;
+}
+@keyframes rotateColors {
+  0% {
+    background-image: conic-gradient(from 0deg, #00DDEB, #AF40FF, #5B42F3, #00DDEB, #AF40FF, #5B42F3, #00DDEB, #AF40FF, #5B42F3, #00DDEB, #AF40FF, #5B42F3, #00DDEB);
+    background-position: 0% 50%;
+    box-shadow: 0 0 30px #AF40FF, 0 0 40px #5B42F3, 0 0 50px #00DDEB, 0 0 60px #5B42F3, 0 0 70px #AF40FF;
+  }
+  100% {
+    background-image: conic-gradient(from 360deg, #00DDEB, #AF40FF, #5B42F3, #00DDEB, #AF40FF, #5B42F3, #00DDEB, #AF40FF, #5B42F3, #00DDEB, #AF40FF, #5B42F3, #00DDEB);
+    background-position: 100% 50%;
+    box-shadow: 0 0 30px #AF40FF, 0 0 40px #5B42F3, 0 0 50px #00DDEB, 0 0 60px #5B42F3, 0 0 70px #AF40FF;
+  }
+}
+
+@keyframes galaxyEntry {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (max-width: 997px) {
+  .container span {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .container1Mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .container1Mobile h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .container1Mobile p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 577px) {
+  .center {
+    padding-left: 30px;
+  }
+  .container h2 {
+    font-size: 12px;
+    justify-content: center;
+  }
+  .container p {
+    font-size: 14px;
+  }
+  .anime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .anime2 {
+    display: none;
+  }
+}/*# sourceMappingURL=container.module.css.map */

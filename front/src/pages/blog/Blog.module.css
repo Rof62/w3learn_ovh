@@ -1,0 +1,73 @@
+.grid {
+  background-color: var(--light-grey);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contentCard {
+  width: 1130px;
+}
+
+.search {
+  padding: 10px 15px;
+  border: 2px solid var(--gray-2);
+  border-radius: 20px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.search input {
+  outline: 0;
+  border: 0;
+}
+
+.card {
+  border-radius: 20px;
+  background-color: var(--light-grey);
+  width: 80%;
+  margin: 50px auto;
+}
+
+.li {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s opacity;
+}
+.li:hover {
+  transition: 0.2s opacity;
+  opacity: 0.8;
+}
+
+@media (max-width: 997px) {
+  .search {
+    height: 50px;
+    width: 90%;
+  }
+  .search input {
+    height: 20px;
+  }
+}
+.pagination ul {
+  display: flex;
+  gap: 1rem;
+}
+.pagination li {
+  border: 1px solid white;
+  padding: 0.5rem;
+  background-color: var(--light-grey);
+  border-radius: 0.5rem;
+  transition: 0.5s all;
+}
+.pagination li:hover {
+  transform: scale(1.1);
+}
+.pagination li a {
+  color: white;
+}/*# sourceMappingURL=Blog.module.css.map */

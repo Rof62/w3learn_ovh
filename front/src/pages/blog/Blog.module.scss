@@ -1,0 +1,79 @@
+@use "../../sass/mixin" as mixin;
+
+.grid {
+
+    background-color: var(--light-grey);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+}
+.contentCard {
+    width: 1130px;
+}
+.search {
+    padding: 10px 15px;
+    border: 2px solid var(--gray-2);
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    input {
+        outline: 0;
+        border: 0;
+    }
+}
+
+.card {
+    border-radius: 20px;
+    background-color: var(--light-grey);
+    width: 80%;
+    margin: 50px auto;
+}
+
+.li {
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s opacity;
+
+    &:hover {
+        transition: 0.2s opacity;
+        opacity: 0.8;
+
+    }
+}
+
+@include mixin.md-lt {
+    .search {
+        height: 50px;
+        width: 90%;
+        input {
+            height: 20px;
+        }
+    }
+}
+
+.pagination {
+    ul {
+        display: flex;
+        gap: 1rem;
+    }
+    li {
+        border: 1px solid white;
+        padding: .5rem;
+        background-color: var(--light-grey);
+        border-radius: .5rem;
+        transition: .5s all;
+        &:hover{
+            transform: scale(1.1);
+        }
+        a {
+            color: white;
+        }
+    }
+}
